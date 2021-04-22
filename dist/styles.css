@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Vonique92';
+    src: url(./fonts/vonique-92.regular.otf);
+}
+
+body {
+    height: 100vh;
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: white;
+    font-size: large;
+    background-color: #c33124;
+    margin: 0;
+}
+header {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#top-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.menu-item {
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.menu-item:active {
+    color: #1e0a0a
+}
+section {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+}
+#title {
+    font-family: 'Vonique92';
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: -10px;
+}
+#subtitle {
+    font-size: large;
+}
+#divider {
+    background-color: #f9de59;
+    width: 25vw;
+    height: 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#page-contents {
+    font-size: large;
+}
+#menu-button {
+    background-color: #f9de59;
+    padding: 10px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#menu-button:active {
+    background-color: #d6c051
+}
+#menu-button-text {
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    color: #1e0a0a;
+    font-size: large;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
