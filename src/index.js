@@ -2,10 +2,10 @@ import { renderHeader } from './header.js'
 import { renderHome } from './home.js'
 import { renderFooter } from './footer.js'
 
-const isHome = function() {
+const initHome = function() {
     renderHeader();
     renderHome();
     renderFooter();
 };
 
-isHome();
+initHome();
