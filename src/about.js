@@ -2,6 +2,10 @@ const render = function() {
     const section = document.querySelector('section');
     section.innerHTML = '';
 
+    section.style.backgroundColor = 'white';
+    section.style.color = 'black';
+    section.style.justifyContent = 'center';
+
     const title = document.createElement('div');
     title.id = 'title';
     title.innerText = 'El Puerco Hambre';
@@ -9,25 +13,32 @@ const render = function() {
 
     const subTitle = document.createElement('div');
     subTitle.id = 'subtitle';
-    subTitle.innerText = 'Cuban Comfort Foods';
+    subTitle.innerText = 'About Our Restaurant';
     section.appendChild(subTitle);
 
     const divider = document.createElement('div');
-    divider.id = 'divider';
+    divider.classList = 'divider';
     section.appendChild(divider);
 
     const pageContents = document.createElement('div');
     pageContents.id = 'page-contents';
-    pageContents.innerText = 'Come get a taste of Cuba, here at El Puerco Hambre!';
-    section.appendChild(pageContents);
 
-    const menuButton = document.createElement('div');
-    menuButton.id = 'menu-button';
-    const menuButtonText = document.createElement('div');
-    menuButtonText.id = 'menu-button-text';
-    menuButtonText.innerText = 'Check Out Our Menu';
-    menuButton.appendChild(menuButtonText);
-    section.appendChild(menuButton);
+    const lineOne = document.createElement('p');
+    lineOne.innerText = 'Here at El Puerco Hambre, our goal is to bring you the best & most delicious Cuban comfort foods.';
+    lineOne.style.textAlign = 'center';
+    pageContents.append(lineOne);
+
+    const lineTwo = document.createElement('p');
+    lineTwo.innerText = 'We hope you and your loved ones enjoy your experience with us & our authentic Cuban cuisine!';
+    lineTwo.style.textAlign = 'center';
+    pageContents.append(lineTwo);
+
+    const lineThree = document.createElement('p');
+    lineThree.innerText = 'It\'ll be our pleasure to have you dine with us.';
+    lineThree.style.textAlign = 'center';
+    pageContents.append(lineThree);
+
+    section.appendChild(pageContents);
 };
 
 export { render as renderAbout };

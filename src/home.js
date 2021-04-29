@@ -13,6 +13,10 @@ const render = function() {
         appendBody = false;
     };
 
+    section.style.backgroundColor = '#c33124';
+    section.style.color = 'white';
+    section.style.justifyContent = 'center';
+
     const title = document.createElement('div');
     title.id = 'title';
     title.innerText = 'El Puerco Hambre';
@@ -24,7 +28,7 @@ const render = function() {
     section.appendChild(subTitle);
 
     const divider = document.createElement('div');
-    divider.id = 'divider';
+    divider.classList = 'divider';
     section.appendChild(divider);
 
     const pageContents = document.createElement('div');

@@ -17,18 +17,18 @@ header {
     flex-direction: column;
     justify-content: center;
 }
-#top-menu {
+#navbar {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-.menu-item {
+.navbar-item {
     padding: 10px;
     margin-left: 10px;
     margin-right: 10px;
     cursor: pointer;
 }
-.menu-item:active {
+.navbar-item:active {
     color: #1e0a0a
 }
 section {
@@ -36,7 +36,6 @@ section {
     flex-direction: column;
     height: 80vh;
     align-items: center;
-    justify-content: center;
     overflow-y: auto;
 }
 #title {
@@ -46,17 +45,30 @@ section {
     margin-bottom: -10px;
 }
 #subtitle {
-    font-size: large;
+    font-size: 24px;
 }
-#divider {
+.divider {
     background-color: #f9de59;
     width: 25vw;
-    height: 5px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    height: 3px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: white;
 }
 #page-contents {
-    font-size: large;
+    font-size: 18px;
+}
+.menu-item {
+    font-size: 24px;
+}
+.item-name {
+    font-size: 36px;
+    text-align: center;
+}
+.item-descr {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
 }
 #menu-button {
     background-color: #f9de59;

@@ -7,31 +7,28 @@ const render = function() {
 
     const header = document.createElement('header');
 
-    const topMenu = document.createElement('div');
-    topMenu.id = 'top-menu';
+    const navbar = document.createElement('div');
+    navbar.id = 'navbar';
 
-    const menuItemOne = document.createElement('div');
-    menuItemOne.classList = 'menu-item';
-    menuItemOne.id = `top-menu-item-1`;
-    menuItemOne.innerText = 'HOME';
-    menuItemOne.addEventListener('click', renderHome);
-    topMenu.appendChild(menuItemOne);
+    const navHome = document.createElement('div');
+    navHome.classList = 'navbar-item';
+    navHome.innerText = 'HOME';
+    navHome.addEventListener('click', renderHome);
+    navbar.appendChild(navHome);
 
-    const menuItemTwo = document.createElement('div');
-    menuItemTwo.classList = 'menu-item';
-    menuItemTwo.id = `top-menu-item-2`;
-    menuItemTwo.innerText = 'MENU';
-    menuItemTwo.addEventListener('click', renderMenu);
-    topMenu.appendChild(menuItemTwo);
+    const navMenu = document.createElement('div');
+    navMenu.classList = 'navbar-item';
+    navMenu.innerText = 'MENU';
+    navMenu.addEventListener('click', renderMenu);
+    navbar.appendChild(navMenu);
 
-    const menuItemThree = document.createElement('div');
-    menuItemThree.classList = 'menu-item';
-    menuItemThree.id = `top-menu-item-3`;
-    menuItemThree.innerText = 'ABOUT';
-    menuItemThree.addEventListener('click', renderAbout);
-    topMenu.appendChild(menuItemThree);
+    const navAbout = document.createElement('div');
+    navAbout.classList = 'navbar-item';
+    navAbout.innerText = 'ABOUT';
+    navAbout.addEventListener('click', renderAbout);
+    navbar.appendChild(navAbout);
 
-    header.appendChild(topMenu);
+    header.appendChild(navbar);
 
     pageBody.appendChild(header);
 };
